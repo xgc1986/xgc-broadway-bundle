@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace XgcBroadwayBundle\Tests;
+namespace XgcBroadwayBundle\Test;
 
 use Broadway\CommandHandling\CommandHandler;
 use Broadway\CommandHandling\SimpleCommandBus;
