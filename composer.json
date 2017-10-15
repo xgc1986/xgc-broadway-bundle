@@ -8,14 +8,18 @@
         }
     ],
     "autoload": {
-        "XgcBroadwayBundle\\": "src/"
+        "psr-4": {
+            "XgcBroadwayBundle\\": "src/"
+        }
     },
     "autoload-dev": {
-        "Tests\\": "tests/"
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "require": {
-        "broadway/broadway": "^1.1",
-        "broadway/broadway-bundle": "^0.3.0",
+        "broadway/broadway": "*",
+        "broadway/broadway-bundle": "*",
         "symfony/framework-bundle": "*"
     },
     "config": {
