@@ -1,0 +1,3 @@
+services:
+  broadway.query_handling.query_bus:
+    class: Xgc\Common\Bus\SimpleQueryBus

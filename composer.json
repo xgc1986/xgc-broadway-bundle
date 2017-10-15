@@ -1,0 +1,39 @@
+{
+    "name": "xgc/query-broadway",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Gonzalez Cuadrado",
+            "email": "xgc1986@gmail.com"
+        }
+    ],
+    "autoload": {
+        "XgcBroadwayBundle\\": "src/"
+    },
+    "autoload-dev": {
+        "Tests\\": "tests/"
+    },
+    "require": {
+        "broadway/broadway": "^1.1",
+        "broadway/broadway-bundle": "^0.3.0",
+        "symfony/framework-bundle": "*"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ],
+        "post-update-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ]
+    },
+    "require-dev": {
+        "bruli/php-git-hooks": "^5.1"
+    }
+}
